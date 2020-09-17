@@ -11,7 +11,7 @@ weatherForm.addEventListener('submit', (e) => {
     
 })
 const getForecast = (location,callback) => {
-    fetch('http://localhost:3000/weather?location='+location).then((response) => {
+    fetch('/weather?location='+location).then((response) => {
         response.json().then((data) => {
             if(data.error) {
                 callback(data.error,undefined)
