@@ -5,7 +5,7 @@ const hbs = require('hbs')
 const geocodeService = require('./utils/geocodeservice')
 const weatherService = require('./utils/weatherservice')
 
-const port = process.env.PORT || 3000
+const port = process.env.port || 3000
 
 const publicDirPath = path.join(__dirname,'../public')
 const partialsDirPath = path.join(__dirname,'../partials')
