@@ -65,6 +65,6 @@ app.get('*',(request,response) => {
         name: 'Venkat Utla' 
     })
 })
-app.listen(3000,() => {
+app.listen(port,() => {
     console.log(chalk.green('Server is up'))
 })
